@@ -8,10 +8,10 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js'></script>
 
     <!-- Load ElementUI -->
+    <!-- import CSS -->
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- import JavaScript -->
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-    <script src="//unpkg.com/element-ui/lib/umd/locale/ja.js"></script>
-    <script>ELEMENT.locale(ELEMENT.lang.ja)</script>
 
     <!-- Load axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -20,7 +20,7 @@
     <!-- <link rel="stylesheet" href="/static/main.css"> -->
 </head>
 <body>
-
+    <div id="header"></div>
     <div id="app"></div>
 
     <!-- Register Components -->
@@ -29,7 +29,8 @@
     <script src="/static/Component3.js"></script> -->
 
     <!-- Create Vue Instance -->
-    <script src="/static/App.js"></script>
+    <script src="./static/main.js"></script>
+    <script src="./static/header.js"></script>
 
 </body>
 </html>

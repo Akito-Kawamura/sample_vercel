@@ -1,23 +1,26 @@
 Vue.component(
     'maintable',{
         template: `
-        <ol>
-      <li v-for="person in vtuber">{{ person.name }}</li>
-        </ol>
+        <li v-for="res in results">
+    ID={{ res.id }}<br>
+    name={{ res.name }}<br>
+    check={{ res.check }}
+    </li>
             `,
             data: {
-                vtuber: []
-            },
-            // json読み込み
-            mounted: function() {
-              var self = this;
-              axios
-              .get('./datas/tabledata.json')
-            .then(function(response) {
-                self.vtuber = response.data.vtuber;
-            })
-            .catch(function(error) {
-                console.log('取得に失敗しました。', error);
-            })
-    }
+               results:[]
+             },
+             mounted() {
+               axios.get("./datas/tabledata.json")
+               .then(response => {
+                 this.results = response.data
+                 console.log(response.data)
+               })
+             },
+
+             computed: {
+               processedPosts() {
+                 let posts = this.results;
+               }
+             }
     })

@@ -1,7 +1,27 @@
-{
-	"vtuber": [
-		{ "id": 0, "name": "Lize Helesta" },
-		{ "id": 1, "name": "Ange Katrina" },
-		{ "id": 2, "name": "Toko Inui" }
-	]
-}
+[
+    {
+      "id": 0,
+      "name": "Ajax",
+      "check": true
+    },
+    {
+      "id": 1,
+      "name": "Hello",
+      "check": false
+    },
+    {
+      "id": 2,
+      "name": "World",
+      "check": true
+    },
+    {
+      "id": 3,
+      "name": "vue",
+      "check": true
+    },
+    {
+      "id": 4,
+      "name": "JS",
+      "check": true
+    }
+]

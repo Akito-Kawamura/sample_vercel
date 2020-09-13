@@ -11,6 +11,7 @@ Vue.component(
             data: {
                 vtuber: []
             },
+            // json読み込み
             mounted: function() {
               var self = this;
               axios

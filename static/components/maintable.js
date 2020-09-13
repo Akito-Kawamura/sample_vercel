@@ -1,12 +1,9 @@
 Vue.component(
     'maintable',{
         template: `
-        <el-table v-for="person in vtuber">
-          <el-table-column prop="{{person.id}}" label="ID" width="140">
-          </el-table-column>
-          <el-table-column prop="{{person.name}}" label="Name" width="120">
-          </el-table-column>
-        </el-table>
+        <ol>
+      <li v-for="person in vtuber">{{ person.name }}</li>
+        </ol>
             `,
             data: {
                 vtuber: []

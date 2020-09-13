@@ -6,7 +6,7 @@ var App = new Vue({
   <div>
   <el-container style="height: 500px; border: 1px solid #eee">
     <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
-      <sidebar-component></sidebar-component>
+    <sidebar></sidebar>
     </el-aside>
 
     <el-container>
@@ -53,28 +53,12 @@ var App = new Vue({
             </el-tabs>
           </el-col>
           <el-col :span="12">
-            <el-table :data="tableData">
-              <el-table-column prop="date" label="Date" width="140">
-              </el-table-column>
-              <el-table-column prop="name" label="Name" width="120">
-              </el-table-column>
-              <el-table-column prop="address" label="Address">
-              </el-table-column>
-            </el-table>
+            <maintable></maintable>
             </el-col>
         </el-main>
       </el-container>
     </el-container>
   </div>
-
-  <script>
-  import SidebarComponent from './components/SidebarComponents'
-
-  export default {
-    components: {
-      'sidebar-component':SidebarComponent
-    }
-  </script>
   `,
 
   data: function(){
